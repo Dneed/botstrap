@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <meta name=viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body> <div class="navbar navbar-inverse navbar-fixed-top">
+    <body> 
+        <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -126,39 +127,79 @@
                 </div>
             </div>
         </div>
-        <div>
-            <div class="container" id="comments">
-                <div class="row centered">
-                    <h3>Отзывы о нашей компании</h3>
-                    </br></br>
-                    <div class="col-lg-2 col-lg-offset-1">
-                        <img src="img/c01.png" alt="">
-                        <p>Быстро сработанно, спасибо за сотрудничество</p>
+        <div id="comments">
+            </br></br></br>
+            <div class="container">
+                <h4>Наши посетители:</h4>
+                </br>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="serviceBox">
+                            <div class="service-icon">
+                                <img src="img/c01.png" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Иван Герой</h3>
+                                <p class="description">
+                                    Оцениваю на 5 из 5. Хорошо работают.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-2">
-                        <img src="img/c02.png" alt="">
-                        <p>Видно что ребята работают. Так держать, я доволен предоставленными услугами.</p>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="serviceBox">
+                            <div class="service-icon">
+                                <img src="img/c02.png" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Юлия Сонник</h3>
+                                <p class="description">
+                                    Переезжали офисом. Переехали за 2 дня. Спасибо вам.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-2">
-                        <img src="img/c03.png" alt="">
-                        <p>Работают круглосуточно, хотя трубку взяли только со второго раза.</p>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="serviceBox">
+                            <div class="service-icon">
+                                <img src="img/c03.png" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Николай Литвинов</h3>
+                                <p class="description">
+                                    Хотелось бы больше информации, могу ли я где-то еще вам написать?
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-2">
-                        <img src="img/c04.png" alt="">
-                        <p>Хорошо бы на сайте появиась функция обратного звонка.</p>
-                    </div>
-                    <div class="col-lg-2">
-                        <img src="img/c05.png" alt="">
-                        <p>Дешевле этой компании я не нашла, подскажите с кем можно сравнить?</p>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="serviceBox">
+                            <div class="service-icon">
+                                <img src="img/c04.png" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Киррил</h3>
+                                <p class="description">
+                                    Круглосуточно? Вывоз мебели по ночам соседи не поймут.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="accordione">
+        </div>
+        </br></br></br>
+        <div id="accordione">
+            <div class="acordright">
                 <div class="row container" id="spoiler">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 acordright1">
                         <div id="accordion" class="panel-group">
-                            <div class="a"><h4>Часто задаваемые вопросы :</h4></div>
+                            <div class="firstdiv-a"><h4>Часто задаваемые вопросы :</h4></div>
                             <ul class="accordion">
+                                <li class="firstli collapse">
+                                    <a>Скрытый спойлер</a>
+                                    <p>иначе 1я вкладка открыта при загрузке</p>
+                                </li>
                                 <li class="firstli">
                                     <a>Какой максимальный вес груза?</a>
                                     <p>В нашем автопарке большое количество техники. Наша компаия способна взятся за работу любой сложности, будь это мелкий квартирный переезд или перевозка крупногабаритных грузов</p>
@@ -174,7 +215,7 @@
                             </ul> 
                         </div>
                     </div>
-                    <div class="col-lg-6 second-acordion">
+                    <div class="col-lg-6 second-acordion acordright2">
                         <div id="accordion" class="panel-group">
                             <ul class="accordion">
                                 <li class="firstli">
@@ -194,73 +235,108 @@
                 </div>
             </div>
         </div>
-        <!-- фавиконы соцсетей -->
-        <div id="socfavicon">
-            <div class="container">
-                <div class="row centered">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-vk"></i></a>
+
+
+
+        <div class="dropdown">
+            <button class="btn btn-secondary btn btn-info dropdown-toggle call" type="button" id="dropdownMenu2" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#myModal">
+                <img src="img/call.gif" alt="">
+            </button>
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog modal-sm">
+                    <div class="container content">
+                        <div><h4 style="color: wheat;">Оставьте свой номер мы перезвоним вам</h4></div>
+                        <hr>
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="name" class="col-sm-2 control-label">Имя</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Имя">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="col-sm-2 control-label">Телефон</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="phone" placeholder="Телефон">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <button type="submit" class="btn btn-primary">Перезвонить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/callback.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script>
-            $('a[data-toggle="pill"]').on('hidden.bs.tab', function (e) {
-                console.log(e.target); // вкладка, которая стала активной
-                console.log(e.relatedTarget); // предыдущая активная вкладка
-            })
-        </script>
-        <script>
-            $(document).ready(function () {
-                $('[data-toggle="tooltip"]').tooltip();
-            });
-        </script>
-        <script>
-            $('.carousel').carousel({
-                interval: 6000
-            })
-        </script>
-        <script>
-            $(document).ready(function () {
-                $("#menu").on("click", "a", function (event) {
-                    //отменяем стандартную обработку нажатия по ссылке
-                    event.preventDefault();
-                    //забираем идентификатор бока с атрибута href
-                    var id = $(this).attr('href'),
-                            //узнаем высоту от начала страницы до блока на который ссылается якорь
-                            top = $(id).offset().top;
-                    //анимируем переход на расстояние - top за 1000 мс
-                    $('body,html').animate({scrollTop: top}, 1000)
+
+
+
+            <!-- фавиконы соцсетей -->
+            <div id="socfavicon">
+                <div class="container">
+                    <div class="row centered">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-vk"></i></a>
+                    </div>
+                </div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+            <script src="js/callback.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <script>
+                $('a[data-toggle="pill"]').on('hidden.bs.tab', function (e) {
+                    console.log(e.target); // вкладка, которая стала активной
+                    console.log(e.relatedTarget); // предыдущая активная вкладка
+                })
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $('[data-toggle="tooltip"]').tooltip();
                 });
-            });
-        </script>
-        <script>
-            (function ($) {
-                $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
-
-                $('.accordion a').click(function (j) {
-                    var dropDown = $(this).closest('li').find('p');
-
-                    $(this).closest('.accordion').find('p').not(dropDown).slideUp();
-
-                    if ($(this).hasClass('active')) {
-                        $(this).removeClass('active');
-                    } else {
-                        $(this).closest('.accordion').find('a.active').removeClass('active');
-                        $(this).addClass('active');
-                    }
-
-                    dropDown.stop(false, true).slideToggle();
-
-                    j.preventDefault();
+            </script>
+            <script>
+                $('.carousel').carousel({
+                    interval: 6000
+                })
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $("#menu").on("click", "a", function (event) {
+                        //отменяем стандартную обработку нажатия по ссылке
+                        event.preventDefault();
+                        //забираем идентификатор бока с атрибута href
+                        var id = $(this).attr('href'),
+                                //узнаем высоту от начала страницы до блока на который ссылается якорь
+                                top = $(id).offset().top;
+                        //анимируем переход на расстояние - top за 1000 мс
+                        $('body,html').animate({scrollTop: top}, 1000)
+                    });
                 });
-            })(jQuery);
-        </script>
+            </script>
+            <script>
+                (function ($) {
+                    $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
+                    $('.accordion a').click(function (j) {
+                        var dropDown = $(this).closest('li').find('p');
+
+                        $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+
+                        if ($(this).hasClass('active')) {
+                            $(this).removeClass('active');
+                        } else {
+                            $(this).closest('.accordion').find('a.active').removeClass('active');
+                            $(this).addClass('active');
+                        }
+
+                        dropDown.stop(false, true).slideToggle();
+
+                        j.preventDefault();
+                    });
+                })(jQuery);
+            </script>
     </body>
 </html>
